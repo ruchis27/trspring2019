@@ -1,0 +1,22 @@
+{
+  "credentials": {
+    "username": "rvadlapatla@apttus.com.apttussdk",
+    "password": "",
+    "endpoint": "https://test.salesforce.com",
+    "enableCors": true
+  },
+  "domain": "https://apttussdk-taxandaccounting.cs26.force.com",
+  "network": {
+    "attributes": {
+      "type": "Network",
+      "url": "/services/data/v45.0/sobjects/Network/0DB210000004CQiGAM"
+    },
+    "Id": "0DB210000004CQiGAM",
+    "Name": "eCommerce UI",
+    "UrlPathPrefix": "v"
+  },
+  "initialized": true,
+  "pageName": "ec2",
+  "resourceName": "ec2",
+  "pageEnableCheck": true
+}

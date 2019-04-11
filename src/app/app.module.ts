@@ -7,7 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { ApttusModule } from '@apttus/core';
-import { CommerceModule } from '@apttus/ecommerce';
+import { CommerceModule, StorefrontService, ConversionService } from '@apttus/ecommerce';
 import { ConstraintRulesModule } from '@apttus/constraint-rules';
 import { PromotionModule } from '@apttus/promotion';
 import { AboModule } from '@apttus/abo';
@@ -36,6 +36,7 @@ registerLocaleData(localeMx, 'es-MX', localeMxExtra);
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { AboGuard } from './services/aboGuard';
+import { PSConversionService } from './services/ps-storefront-service';
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -48,7 +49,7 @@ export function createTranslateLoader(http: HttpClient) {
     BrowserModule,
     AppRoutingModule,
     ApttusModule.forRoot(environment),
-    CommerceModule.forRoot('*** Storefront Name ****'),
+    CommerceModule.forRoot('thomsonreuters3'),
     ProductDrawerModule,
     ModalModule.forRoot(),
     ApttusModalModule,
@@ -67,6 +68,7 @@ export function createTranslateLoader(http: HttpClient) {
     AboModule
   ],
   providers: [RouteGuard, AuthGuard, AboGuard, ConfigureGuard, ConstraintRuleGuard],
+  // {provide: ConversionService, useClass: PSConversionService}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

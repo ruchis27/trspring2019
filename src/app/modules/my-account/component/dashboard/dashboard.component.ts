@@ -71,7 +71,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
       const orderPriceList$ = [];
       orders.forEach(order => orderPriceList$.push(this.priceService.getOrderPrice(order)));
       Observable.combineLatest(orderPriceList$).subscribe(prices => {
-        prices.forEach(price => this.spent.addPrice(price));
+        // prices.forEach(price => this.spent.addPrice(price));
       });
 
     });
