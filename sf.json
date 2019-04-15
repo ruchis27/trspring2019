@@ -1,7 +1,7 @@
 {
   "credentials": {
     "username": "rvadlapatla@apttus.com.apttussdk",
-    "password": "Webex_9876CD1lZbCcDmsHXglrSHwTrHuu",
+    "password": "",
     "endpoint": "https://test.salesforce.com",
     "enableCors": true
   },
