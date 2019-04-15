@@ -49,7 +49,7 @@ export function createTranslateLoader(http: HttpClient) {
     BrowserModule,
     AppRoutingModule,
     ApttusModule.forRoot(environment),
-    CommerceModule.forRoot('thomsonreuters3'),
+    CommerceModule.forRoot('thomsonreuters'),
     ProductDrawerModule,
     ModalModule.forRoot(),
     ApttusModalModule,

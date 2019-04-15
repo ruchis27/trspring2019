@@ -4,7 +4,7 @@ export const environment: Configuration = {
   defaultImageSrc: './assets/images/default.png',
   defaultCountry: 'US',
   defaultLanguage: 'en-US',
-  enableErrorLogging: false,
+  enableErrorLogging: true,
   enableErrorReporting: false,
   enableMultiCurrency: true,
   enableQueryLogs: true,

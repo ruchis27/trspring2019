@@ -64,6 +64,10 @@
                   <span class="small mt-1">{{item?.IncentiveAdjustmentAmount | localCurrency | async}}</span>
                 </div>
                 <div class="d-flex justify-content-between small mt-1">
+                  <span>Unit Net Price</span>
+                  <apt-price [record]="item" type="base"></apt-price>
+                </div>
+                <div class="d-flex justify-content-between small mt-1">
                   <span>Net Price</span>
                   <apt-price [record]="item" type="net"></apt-price>
                 </div>

@@ -1,14 +1,14 @@
 import { Configuration } from '@apttus/core';
 export const environment: Configuration = {
-  production: true,
+  production: false,
   defaultImageSrc: './assets/images/default.png',
   defaultCountry: 'US',
   defaultLanguage: 'en-US',
-  enableErrorLogging: false,
+  enableErrorLogging: true,
   enableErrorReporting: false,
-  enableMultiCurrency: false,
+  enableMultiCurrency: true,
   enableQueryLogs: true,
-  enablePerformanceLogs: false,
+  enablePerformanceLogs: true,
   defaultCurrency: 'USD',
   bufferTime: 50,
   maxBufferSize: 10,
@@ -17,12 +17,12 @@ export const environment: Configuration = {
   disableCache: false,
   encryptResponse: false,
   cartRetryLimit: 20,
-  productIdentifier: 'Id',
+  productIdentifier: 'ProductCode',
   type: 'Salesforce',
   cartDebounceTime: 2000,
   proxy: 'https://apttus-proxy.herokuapp.com',
 
   // Salesforce environment variables
-  organizationId: '****Salesforce Organization Id****',
-  endpoint: '****Salesforce Community URL****'
+  organizationId: '00D210000009bUwEAI',
+  endpoint: 'https://apttussdk-taxandaccounting.cs26.force.com/v'
 };

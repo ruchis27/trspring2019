@@ -14,17 +14,19 @@
           <div>
             <form class="border-left pl-4 row">
               <div class="form-group col mx-3">
-                <label>Standard Price</label>
+                <label>List Price</label>
                 <h5 class="pt-1">
                   <apt-price [record]="product" *ngIf="product"></apt-price>
                 </h5>
               </div>
+              <!-- 
               <div *ngIf="!product?.HasOptions" class="form-group col mx-3">
                 <label>Net Price</label>
                 <h5 class="pt-1">
                   <apt-price *ngIf="product" [record]="product" [quantity]="quantity" [options]="productOptionFormList" type="net"></apt-price>
                 </h5>
               </div>
+            -->
               <!-- <div class="form-group col">
                 <label for="frequency">Frequency</label>
                 <h5>

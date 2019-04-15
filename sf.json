@@ -1,7 +1,7 @@
 {
   "credentials": {
     "username": "rvadlapatla@apttus.com.apttussdk",
-    "password": "",
+    "password": "Webex_9876CD1lZbCcDmsHXglrSHwTrHuu",
     "endpoint": "https://test.salesforce.com",
     "enableCors": true
   },
@@ -16,7 +16,7 @@
     "UrlPathPrefix": "v"
   },
   "initialized": true,
-  "pageName": "ec2",
-  "resourceName": "ec2",
+  "pageName": "sp19",
+  "resourceName": "sp19",
   "pageEnableCheck": true
 }
