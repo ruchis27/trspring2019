@@ -4,7 +4,7 @@ import { setTheme } from 'ngx-bootstrap/utils';
 import { Title } from '@angular/platform-browser';
 import * as _ from 'lodash';
 import { Observable } from 'rxjs';
-import { ServiceWorkerService } from './services/service-worker';
+// import { ServiceWorkerService } from './services/service-worker';
 import { Product } from '@apttus/ecommerce';
 import { PlatformService } from '@apttus/core';
 import { ToastrService } from 'ngx-toastr';
@@ -32,13 +32,13 @@ export class AppComponent implements OnInit, OnDestroy {
   constructor(private titleService: Title,
     private router: Router,
     private activatedRoute: ActivatedRoute,
-    private sr: ServiceWorkerService,
+    // private sr: ServiceWorkerService,
     private platformService: PlatformService,
     private toastr: ToastrService,
     private bootstrapService: BootstrapService,
     private productSelectionService: ProductSelectionService) {
     setTheme('bs4'); // or 'bs4'
-    sr.initialize();
+    // sr.initialize();
     bootstrapService.initialize();
   }
 

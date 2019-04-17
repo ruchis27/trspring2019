@@ -1,11 +1,11 @@
 import { Configuration } from '@apttus/core';
 export const environment: Configuration = {
-  production: false,
+  production: true,
   defaultImageSrc: './assets/images/default.png',
   defaultCountry: 'US',
   defaultLanguage: 'en-US',
   enableErrorLogging: true,
-  enableErrorReporting: false,
+  enableErrorReporting: true,
   enableMultiCurrency: true,
   enableQueryLogs: true,
   enablePerformanceLogs: true,

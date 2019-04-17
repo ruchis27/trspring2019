@@ -5,7 +5,7 @@ export const environment: Configuration = {
   defaultCountry: 'US',
   defaultLanguage: 'en-US',
   enableErrorLogging: true,
-  enableErrorReporting: false,
+  enableErrorReporting: true,
   enableMultiCurrency: true,
   enableQueryLogs: true,
   enablePerformanceLogs: true,
